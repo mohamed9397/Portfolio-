@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Développeur Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">MonPortfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn">Clair/Sombre</button>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Bonjour, je suis <span class="highlight">Mohamed TRAORE</span></h1>
+            <p>Développeur Web Passionné</p>
+            <a href="#contact" class="btn">Me Contacter</a>
+        </div>
+    </section>
+
+    <section id="apropos" class="section">
+        <h2 class="section-title">À propos de moi</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Je suis un développeur web passionné par la création de sites modernes et responsives. 
+                J'aime apprendre de nouvelles technologies et résoudre des problèmes complexes.</p>
+                <p>Actuellement en formation à l'ENSPD, je développe mes compétences en HTML, CSS et JavaScript.</p>
+                <a href="CV.pdf.pdf" download class="btn btn-download" target="_blank">📥 Télécharger mon CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="section">
+        <h2 class="section-title">Mes Compétences</h2>
+        <div class="skills-container">            
+            <div class="skill-category">
+                <h3>Compétences Techniques</h3>
+                <ul class="skills-list">
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Responsive Design</li>
+                    <li>Git & GitHub</li>
+                    <li>Flexbox & CSS Grid</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Compétences Transversales</h3>
+                <ul class="skills-list">
+                    <li>Résolution de problèmes</li>
+                    <li>Travail d'équipe</li>
+                    <li>Communication</li>
+                    <li>Autonomie</li>
+                    <li>Créativité</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="section">
+        <h2 class="section-title">Mes Projets</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Projet 1 - Page Web Statique</h3>
+                <p>Création d'une page web responsive avec HTML et CSS</p>
+            </div>
+            <div class="project-card">
+                <h3>Projet 2 - Formulaire Interactif</h3>
+                <p>Formulaire de contact avec validation JavaScript</p>
+            </div>
+            <div class="project-card">
+                <h3>Projet 3 - Site Vitrine</h3>
+                <p>Site complet avec navigation et sections multiples</p>
+            </div>
+             
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-container">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required>                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+            <div class="social-links">
+                <a href="#" target="_blank">WhatsApp</a>
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Facebook</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 - Tous droits réservés</p>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
